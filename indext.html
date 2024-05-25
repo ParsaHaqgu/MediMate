@@ -4,10 +4,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+
+  <!--=============== SWIPER CSS ===============-->
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="assets/css/styles.css">
   <title>Landing Page</title>
   <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
   <script src="bootstrap-5.3.3-dist/js/bootstrap.js"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 
 <body>
@@ -15,29 +24,46 @@
 
   <nav class="navbar navbar-info bg fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand  " href="#"><img src="logo3.png" alt="logo" width="250"></a>
+
+      <a class="navbar-brand  " href="#"><img src="logo3.png" alt="logo" width="200"></a>
+
+
+
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
         aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="offcanvas offcanvas-end text-bg " tabindex="-1" id="offcanvasDarkNavbar"
         aria-labelledby="offcanvasDarkNavbarLabel">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel" style="color: white; "><b>MediMate</b></h5>
           <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
             aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item pb-3">
+              <a class="btn  btn  active" role="button" aria-current="page" href="#"
+                style="background-color: #ffcad4;  color: #8cbabf ; border: none;   width:110px ;  "><b>ورود کاربران</b>
+              </a>
+            </li>
+
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#" style="color: white;">نوبت دهی مطب</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#" style="color: white;">مشاوره پزشکی آنلاین</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: white;">مراکز درمانی </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: white;">سایر خدمات </a>
+            </li>
+
+            <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Dropdown
               </a>
               <ul class="dropdown-menu dropdown-menu-dark">
@@ -48,159 +74,994 @@
                 </li>
                 <li><a class="dropdown-item" href="#">Something else here</a></li>
               </ul>
-            </li>
+            </li> -->
           </ul>
           <form class="d-flex mt-3" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-info" type="submit">Search</button>
+            <input class="form-control me-2" type="search" placeholder="نام پزشک ، بیماری ، مراکز درمانی"
+              aria-label="Search">
+            <button class="btn btn-info" type="submit"
+              style="background-color: #e6f3ff;  color: #297397  ; border: none; border-radius: 2rem;">Search</button>
           </form>
         </div>
       </div>
+
     </div>
   </nav>
 
   <!-- /Navbar -->
   <!-- Banner -->
-  <section id="banner" class="banner">\
-    <div class="img-fluid ">
-        <div class="col-lg-12 col-md-12 col-12">
-          <div class="banner_img">
-            <img src="BANNER4.svg" class="img-fluid " width="1500">
+  <!-- <div class="banner">
+    <div class="banner-item">
+      <img src="BNNER3.png" class="d-block w-100" alt="...">
+
+    </div>
+  </div> -->
+
+  <div class="banner text-white text-center text-lg-start mt-4 ">
+
+
+    <div class="text-center p-5  " style="background-color: #a1ccd1"> 
+      <a class="navbar-brand  " href="#"><img class="logo pt-5" src="logo3.png" alt="logo" width="400"></a>
+<br>
+
+<div class="container pt-4  ml-3 mr-3">
+
+  <div class="head-text  text-center  me-2  mt-4 mb-5 ">
+    <h3 class="header-text text-center" style="color: #558d93;">
+      نوبت‌دهی اینترنتی و مشاوره آنلاین پزشکان ایران
+
+    </h3>
+
+  </div>
+
+</div>
+
+<div class="search ">
+<form class="search-bar" role="search">
+
+  <input class="form-control me-2 mt-4 " type="search" placeholder="نام پزشک ، نام بیماری ، تخصص ها ، مراکز درمانی"
+    aria-label="Search" >
+    <div class="search-button">
+    <button class="btn btn-info mt-2" type="submit"
+    style="  color: #f5f8f9  ; border: none; border-radius: 1rem;">جستجو</button>
+</div>
+</form>
+</div>
+
+<section id="doc" class="doc section-padding pb-4  ">
+  <div class="container pt-4  ml-3 mr-3">
+    <div class="row">
+
+      <div class="col-lg-2  ml-1">
+        <div class="h.icon d-block w-100" style="width: 18rem;">
+          
+      
+            <a href="#" class="img "> <img src="2.png" class="card-img-top" alt="Icon"> </a>
+        </div>
+      </div>
+
+      <div class="col-lg-2  ml-1">
+        <div class="h.icon d-block w-100" style="width: 18rem;">
+         
+      
+            <a href="#" class="img "> <img src="4.png" class="card-img-top" alt="Icon"> </a>
+        </div>
+      </div>
+
+
+      <div class="col-lg-2  ml-1">
+        <div class="h.icon d-block w-100" style="width: 18rem;">
+         
+      
+            <a href="#" class="img "> <img src="11.png" class="card-img-top" alt="Icon"> </a>
+        </div>
+      </div>
+
+      <div class="col-lg-2  ml-1">
+        <div class="h.icon d-block w-100" style="width: 18rem;">
+        
+      
+            <a href="#" class="img "> <img src="8.png" class="card-img-top" alt="Icon"> </a>
+        </div>
+      </div>
+
+      <div class="col-lg-2  ml-1">
+        <div class="h.icon d-block w-100" style="width: 18rem;">
+         
+      
+            <a href="#" class="img "> <img src="9.png" class="card-img-top" alt="Icon"> </a>
+        </div>
+      </div>
+
+      <div class="col-lg-2  ml-1">
+        <div class="h.icon d-block w-100" style="width: 18rem;">
+        
+      
+            <a href="#" class="img "> <img src="2.png" class="card-img-top" alt="Icon"> </a>
+        </div>
+      </div>
+
+   
+
+
+    </div>
+
+
+
+  </div>
+
+</section>
+</div>
+
+
+
+
+
+
+    </div>
+
+    
+  </div>
+
+
+  <!-- /Banner -->
+
+  <!-- Nav & Tab -->
+  <div class="tab-nav">
+    <nav class="tab d-block w-100 bg-body-non m-3 me-4  " style="border-radius: 2rem; border-color: #8cbabf;  ">
+      <form class="container justify-content-end pt-4">
+        <button class="btn btn-sm btn-outline-secondary me-2" type="button">مغز و اعصاب (نورولوژی)</button>
+        <button class="btn btn-sm btn-outline-secondary me-2" type="button">داخلی</button>
+        <button class="btn btn-sm btn-outline-secondary me-2" type="button"> غدد و متابولیسم</button>
+        <button class="btn btn-sm btn-outline-secondary me-2" type="button"> عمومی</button>
+        <button class="btn btn-sm btn-outline-secondary me-2" type="button">کودکان</button>
+        <button class="btn btn-sm btn-outline-secondary me-2" type="button">ارتوپدی</button>
+        <button class="btn btn-sm btn-outline-secondary me-2" type="button">گوش حلق و بینی</button>
+        <button class="btn btn-sm btn-outline-secondary me-2" type="button">قلب و عروق</button>
+        <button class="btn btn-sm btn-outline-secondary me-2" type="button">پوست ، مو و زیبایی</button>
+        <button class="btn  btn-outline-white  me-2" type="button">:جستجوهای پرتکرار</button>
+
+
+      </form>
+    </nav>
+  </div>
+  <!--/ Nav & Tab -->
+
+
+  <!-- Search -->
+  <!-- <div class="search col-lg-12 container pt-5 pb-5 ms-10 " >
+  <div class="row align-items-center justify-content-center ">
+
+  
+    <form class="d-flex mt-3  " role="search">
+      <button class="btn btn-info" type="submit" style="background-color: #ffcad4;  color: #297397  ; border: none; border-radius: 2rem;">Search</button>
+
+      <input class="form-control ms-2 " type="search" placeholder="نام پزشک ، بیماری ، مراکز درمانی" aria-label="Search" style="width: 300px; ;">
+    </form>  
+
+  </div>
+</div> -->
+  <!-- /Search -->
+
+
+
+  <!--card -->
+
+  <div class="container pt-4  ml-3 mr-3">
+
+    <div class="section-heade  text-end  me-2  pt-4 ">
+      <h3>
+        خدمات
+
+      </h3>
+
+    </div>
+
+  </div>
+
+  <section id="doc" class="doc section-padding pb-4  ">
+    <div class="container pt-4  ml-3 mr-3">
+      <div class="row">
+
+        <div class="col-lg-3  ml-1">
+          <div class="card d-block w-100" style="width: 18rem;">
+            <img src="Science 2.png" class="card-img-top" alt="Icon">
+            <div class="card-body">
+              <h4 class="card-title">خدمات پزشکی در محل </h4>
+              <p class="card-text pt-5 ">دریافت خدمات پزشکی انجام انواع آزمایشات در منزل شما</p>
+              <a href="#" class="btn btn-primary">لیست خدمات</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3">
+          <div class="card d-block w-100" style="width: 18rem;">
+            <img src="text3.png" class="card-img-top" alt="icon">
+            <div class="card-body">
+              <h4 class="card-title  ">مشاوره متنی فوری</h4>
+              <p class="card-text  pt-5">مشاوره متنی فوری با اولین پزشک آنلاین در تمامی ساعات شبانه روز</p>
+              <a href="#" class="btn btn-primary"> ثبت درخواست</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-3">
+          <div class="card d-block w-100" style="width: 18rem;">
+            <img src="Phone.png" class="card-img-top" alt="icon">
+            <div class="card-body">
+              <h4 class="card-title">مشاوره تلفنی</h4>
+              <p class="card-text pt-5">دریافت مشاوره از پزشکان متخصص و مجرب به صورت تلفنی</p>
+              <a href="#" class="btn btn-primary">دریافت مشاوره</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3  ml-1">
+          <div class="card d-block w-100" style="width: 18rem;">
+            <img src="calender and time2.png" class="card-img-top" alt="icon">
+            <div class="card-body">
+              <h4 class="card-title">دریافت نوبت حضوری</h4>
+              <p class="card-text pt-5">دریافت نوبت اینترنتی برای مراجعه حضوری به مطب پزشکان</p>
+              <a href="#" class="btn btn-primary">لیست پزشکان</a>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+
+
+    </div>
+
+  </section>
+</div>
+
+
+  <!--/card -->
+
+ 
+
+
+  <!-- wrapper     -->
+
+  <!-- Fontawesome Link for Icons -->
+
+  <div class="container pt-4 pb-5  ml-3 mr-3">
+
+    <div class="section-heade  text-end  me-2 pt-4 pb-4  ">
+      <h3>
+        پر بازدید ترین تخصص ها
+      </h3>
+
+    </div>
+
+
+
+    <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+
+
+          <div class="row">
+
+            <div class="col-lg-2  ml-1">
+              <div class="card_carousel d-block w-100" style="width: 12rem;">
+                <img src="H.png" class="card-img-top" alt="IMG">
+                <div class="card-body ">
+                  <h6 class="card-title text-center pb-3">پزشک پوست و زیبایی</h6>
+                  <!-- <p class="card-text text-center">  +34,000  </p> -->
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-2">
+              <div class="card_carousel d-block w-100" style="width: 12rem;">
+                <img src="2.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h6 class="card-title text-center pb-3"> پزشک مغز و اعصاب</h6>
+                  <!-- <p class="card-text"></p> -->
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-lg-2">
+              <div class="card_carousel d-block w-100" style="width: 12rem;">
+                <img src="3.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h6 class="card-title text-center pb-3"> پزشک قلب و عروق </h6>
+                  <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the</p> -->
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-2  ml-1">
+              <div class="card_carousel d-block w-100" style="width: 12rem;">
+                <img src="4.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h6 class="card-title text-center pb-3">پزشک گوش حلق و بینی</h6>
+                  <!-- <p class="card-text"></p> -->
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-lg-2">
+              <div class="card_carousel d-block w-100" style="width: 12rem;">
+                <img src="5.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h6 class="card-title text-center pb-3">پزشک داخلی </h6>
+                  <!-- <p class="card-text"></p> -->
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-2  ml-1">
+              <div class="card_carousel d-block w-100" style="width: 12rem;">
+                <img src="6.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h6 class="card-title text-center pb-3">دندانپزشک </h6>
+                  <!-- <p class="card-text"></p> -->
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+              </div>
+            </div>
+
 
           </div>
 
-        
-      
+
+
+        </div>
+
+
+        <div class="carousel-item ">
+
+
+          <div class="row">
+
+            <div class="col-lg-2  ml-1">
+              <div class="card_carousel d-block w-100" style="width: 12rem;">
+                <img src="7.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h6 class="card-title text-center pb-3">پزشک اورتوپد </h6>
+                  <!-- <p class="card-text"></p> -->
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-2">
+              <div class="card_carousel d-block w-100" style="width: 12rem;">
+                <img src="8.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h6 class="card-title text-center pb-3">پزشک چشم </h6>
+                  <!-- <p class="card-text"></p> -->
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-lg-2">
+              <div class="card_carousel d-block w-100" style="width: 12rem;">
+                <img src="9.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h6 class="card-title text-center pb-3">پزشک مجاری تنفسی </h6>
+                  <!-- <p class="card-text"></p> -->
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-2  ml-1">
+              <div class="card_carousel d-block w-100" style="width: 12rem;">
+                <img src="10.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h6 class="card-title text-center pb-3">پزشک اورولوژی </h6>
+                  <!-- <p class="card-text"></p> -->
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-lg-2">
+              <div class="card_carousel d-block w-100" style="width: 12rem;">
+                <img src="11.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h6 class="card-title text-center pb-3"> پزشک کودکان</h6>
+                  <!-- <p class="card-text "></p> -->
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-2  ml-1">
+              <div class="card_carousel d-block w-100" style="width: 12rem;">
+                <img src="12.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h6 class="card-title text-center pb-3">پزشک عمومی </h6>
+                  <!-- <p class="card-text">.</p> -->
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+
+
+        </div>
+
+
+
+
+
+
+
+      </div>
+      <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+  </div>
+
+  <!-- /wrapper -->
+
+  <!-- city list group -->
+  <div class="city">
+
+    <div class="container pt-4 pb-4  ml-3 mr-3">
+
+      <div class="section-heade  text-end  me-2  pt-4 ">
+        <h3>
+          شهرهای تحت پوشش
+
+        </h3>
 
       </div>
 
     </div>
 
-
-    <!-- /Banner -->
-
-    <!-- Nav & Tab -->
-    <nav  class="tab bg-body-non m-3 ">
-      <form class="container-fluid justify-content-start pt-4">
-        <button class="btn btn-sm btn-outline-secondary me-2" type="button">Main button</button>
-        <button class="btn btn-sm btn-outline-secondary me-2" type="button">Smaller button</button>
-        <button class="btn btn-sm btn-outline-secondary me-2" type="button">Main button</button>
-        <button class="btn btn-sm btn-outline-secondary me-2" type="button">Smaller button</button>
-        <button class="btn btn-sm btn-outline-secondary me-2" type="button">Main button</button>
-        <button class="btn btn-sm btn-outline-secondary me-2" type="button">Smaller button</button>
-        <button class="btn btn-sm btn-outline-secondary me-2" type="button">Main button</button>
-        <button class="btn btn-sm btn-outline-secondary me-2" type="button">Smaller button</button>
-        <button class="btn btn-sm btn-outline-secondary me-2" type="button">Main button</button>
-        <button class="btn btn-sm btn-outline-secondary me-2" type="button">Smaller button</button>
-        <button class="btn btn-sm btn-outline-secondary me-2" type="button">Main button</button>
-        <button class="btn btn-sm btn-outline-secondary me-2" type="button">Main button</button>
-      
-      </form>
-    </nav>
-        <!--/ Nav & Tab -->
-
-    <!--card -->
-    <section id="doc" class="doc section-padding">
-      <div class="container pt-4  ml-3 mr-3">
+    <section id="city-name" class="doc section-padding pb-4  d-block w-100 ">
+      <div class="container pt-2  ">
         <div class="row">
-          <div class="col-md-12">
-            <div class="section-heade  text-end  me-5  pt-4 ">
-              <h2>
-خدمات  
-              </h2>
-              
-            </div>
-  
-          </div>
-  
-          <div class="card m-3 " style="width: 18rem;">
-            <img src="..." class="card-img-top " alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-  
-          <div class="card m-3" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
 
-          <div class="card m-3" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
+
+          <div class="col-lg-2">
+            <a href="" class="card_carousel d-block w-100" style="width: 12rem;">
+              <div class="card-body">
+                <h5 class="card-title text-center pb-5 pt-5"> اصفهان </h5>
+                <!-- <p class="card-text "></p> -->
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+              </div>
+            </a>
           </div>
 
 
-          <div class="card m-3" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
+          <div class="col-lg-2">
+            <a href="" class="card_carousel d-block w-100" style="width: 12rem;">
+              <div class="card-body">
+                <h5 class="card-title text-center pb-5 pt-5"> شیراز </h5>
+                <!-- <p class="card-text "></p> -->
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+              </div>
+            </a>
           </div>
 
-  
+          <div class="col-lg-2">
+            <a href="" class="card_carousel d-block w-100" style="width: 12rem;">
+              <div class="card-body">
+                <h5 class="card-title text-center pb-5 pt-5"> همدان </h5>
+                <!-- <p class="card-text "></p> -->
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+              </div>
+            </a>
+          </div>
+
+
+          <div class="col-lg-2">
+            <a href="" class="card_carousel d-block w-100" style="width: 12rem;">
+              <div class="card-body">
+                <h5 class="card-title text-center pb-5 pt-5"> مشهد </h5>
+                <!-- <p class="card-text "></p> -->
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+              </div>
+            </a>
+          </div>
+
+
+          <div class="col-lg-2">
+            <a href="" class="card_carousel d-block w-100" style="width: 12rem;">
+              <div class="card-body">
+                <h5 class="card-title text-center pb-5 pt-5"> یزد </h5>
+                <!-- <p class="card-text "></p> -->
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+              </div>
+            </a>
+          </div>
+
+
+
+          <div class="col-lg-2">
+            <a href="" class="card_carousel d-block w-100" style="width: 12rem;">
+              <div class="card-body">
+                <h5 class="card-title text-center pb-5 pt-5"> تهران </h5>
+                <!-- <p class="card-text "></p> -->
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+              </div>
+            </a>
+          </div>
+
+
+
+
+
+
+
+        </div>
+
+
+
+      </div>
+
     </section>
+
+
+    <section id="city-name" class="doc section-padding pb-4  d-block w-100 ">
+      <div class="container pt-2  ">
+        <div class="row">
+
+
+          <div class="col-lg-2">
+            <a href="" class="card_carousel d-block w-100" style="width: 12rem;">
+              <div class="card-body">
+                <h5 class="card-title text-center pb-5 pt-5"> سمنان </h5>
+                <!-- <p class="card-text "></p> -->
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-2">
+            <a href="" class="card_carousel d-block w-100" style="width: 12rem;">
+              <div class="card-body">
+                <h5 class="card-title text-center pb-5 pt-5"> بوشهر </h5>
+                <!-- <p class="card-text "></p> -->
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-2">
+            <a href="" class="card_carousel d-block w-100" style="width: 12rem;">
+              <div class="card-body">
+                <h5 class="card-title text-center pb-5 pt-5"> رشت </h5>
+                <!-- <p class="card-text "></p> -->
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-2">
+            <a href="" class="card_carousel d-block w-100" style="width: 12rem;">
+              <div class="card-body">
+                <h5 class="card-title text-center pb-5 pt-5"> ایلام </h5>
+                <!-- <p class="card-text "></p> -->
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+              </div>
+            </a>
+          </div>
+
+
+          <div class="col-lg-2">
+            <a href="" class="card_carousel d-block w-100" style="width: 12rem;">
+              <div class="card-body">
+                <h5 class="card-title text-center pb-5 pt-5"> کرمانشاه </h5>
+                <!-- <p class="card-text "></p> -->
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+              </div>
+            </a>
+          </div>
+
+
+
+          <div class="col-lg-2">
+            <a href="" class="card_carousel d-block w-100" style="width: 12rem;">
+              <div class="card-body">
+                <h5 class="card-title text-center pb-5 pt-5"> مهاباد </h5>
+                <!-- <p class="card-text "></p> -->
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+              </div>
+            </a>
+          </div>
+
+
+
+
+
+
+        </div>
+
+
+
+      </div>
+
+    </section>
+  </div>
+
+
+
+  <!--/ city list group -->
+
+
+
+  <!--   medical center -->
+
+
+  <div class="medical-">
+
+    <div class="container pt-4 pb-4  ml-3 mr-3">
+
+      <div class="section-heade  text-end  me-2  pt-4 ">
+        <h3>
+          مراکز درمانی
+        </h3>
+
+      </div>
+
+    </div>
+
+    <section id="medical-center" class="doc section-padding pb-4  d-block w-100 ">
+      <div class="container pt-2  ">
+        <div class="row">
+
+
+
+
+
+          <div class="col-lg-3">
+            <a href="" class="card d-block w-100" style="width: 18rem;">
+              <img src="16.png" class="card-img-top" alt="icon">
+              <div class="card-body">
+                <h5 class="card-title text-center pb-5 pt-5"> مرکز تصویربرداری </h5>
+                <!-- <p class="card-text "></p> -->
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+              </div>
+            </a>
+          </div>
+
+
+
+          <div class="col-lg-3">
+            <a href="" class="card d-block w-100" style="width: 18rem;">
+              <img src="13.png" class="card-img-top" alt="icon">
+              <div class="card-body">
+                <h5 class="card-title text-center pb-5 pt-5"> آزمایشگاه </h5>
+                <!-- <p class="card-text "></p> -->
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+              </div>
+            </a>
+          </div>
+
+
+          <div class="col-lg-3">
+            <a href="" class="card d-block w-100" style="width: 18rem;">
+              <img src="14.png" class="card-img-top" alt="icon">
+              <div class="card-body">
+                <h5 class="card-title text-center pb-5 pt-5"> کلینیک </h5>
+                <!-- <p class="card-text "></p> -->
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+              </div>
+            </a>
+          </div>
+
+
+
+
+
+          <div class="col-lg-3">
+            <a href="" class="card d-block w-100" style="width: 18rem;">
+              <img src="15.png" class="card-img-top" alt="icon">
+              <div class="card-body">
+                <h5 class="card-title text-center pb-5 pt-5"> بیمارستان </h5>
+                <!-- <p class="card-text "></p> -->
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+              </div>
+            </a>
+          </div>
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+      </div>
+
+    </section>
+
+
+
+  </div>
+
+  <!-- medical Article -->
+
+
+
+
+  <!--/ medical Article -->
+  <div class="article">
+
+    <div class="container pt-4 pb-4 ">
+
+      <div class="section-heade  text-end  me-2  pt-4 ">
+        <h3>
+          مجله سلامت </h3>
+
+      </div>
+
+    </div>
+
+    <section id="medical-article" class="medical-article section-padding pb-4 " ;>
+      <div class="container">
+        <div class="row" style="background-color: #a1ccd1; border-radius: 2rem;">
+
+
+
+
+          <section id="article" class="medi-article section-padding ">
+            <div class="container">
+              <div class="row">
+
+                <div class="col-lg-8  col-md-12 col-12 ps-lg-5 mt-md-5">
+                  <div class="about-text">
+                    <h4 class="title mb-3 " style="color: #558d93;">
+                      بهترین و بدترین انواع عادت‌ها و رفتارهای غذایی</h4>
+                    <p class="article-text mb-1">تصور بسیاری از افراد این است که تنها مقدار غذایی که می‌خورند، روی
+                      تناسب‌اندام و سلامت بدن تأثیر دارد. اما جالب است بدانید که عادت های غذایی خوب و بد هم در چاقی و
+                      لاغری ما تأثیر دارند   </p>
+                    <a href="#" class="btn btn-info  mt-2">بیشتر بدانید </a>
+                  </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-12 col-12">
+                  <div class="about-img  ">
+                    <img style="border-radius: 2rem ;  "
+                      src="https://doctoreto.com/blog/wp-content/uploads/2021/12/thequint-fit_2018-02_58ab68c0-269f-4d0e-83bc-daa92eea3e24_e231d1bc-bfd9-4862-badb-a2ecde1fae14-e1640611764244.jpg"
+                      class="img-fluid mt-4 mb-4">
+
+                  </div>
+
+                </div>
+
+
+              </div>
+
+            </div>
+          </section>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section id="medical-article" class="medical-article section-padding pt-4 pb-4" ;>
+      <div class="container">
+        <div class="row" style="background-color: #a1ccd1; border-radius: 2rem;">
+
+
+
+
+          <section id="article" class="medi-article section-padding ">
+            <div class="container">
+              <div class="row">
+
+
+                <div class="col-lg-4 col-md-12 col-12">
+                  <div class="about-img  ">
+                    <img style="border-radius: 2rem ;  "
+                      src="https://doctoreto.com/blog/wp-content/uploads/2022/05/food-weight-loss.jpg"
+                      class="img-fluid mt-4 mb-4">
+
+                  </div>
+
+                </div>
+
+                <div class="col-lg-8  col-md-12 col-12 ps-lg-5 mt-md-5 ">
+                  <div class="about-text">
+                    <h4 class="title mb-3  text-start" style="color: #558d93;">
+                      بهترین غذاها برای کاهش وزن
+                    </h4>
+                    <p class="article-text mb-1 text-start">مطالعات نشان دادند که برخی از غذاها مثل میوه‌ها، سبزی‌ها،
+                      مغزها و آجیل و غلات و پیروی از انواع رژیم غذایی با کاهش وزن مرتبط هستند. در واقع برخی غذاها کالری
+                      کمی دارند و در عوض نیاز به کالری زیادی برای هضم دارند</p>
+                    <a href="#" class="btn btn-info btn-start  mt-2">بیشتر بدانید</a>
+                  </div>
+
+                </div>
+
+
+
+
+              </div>
+
+            </div>
+          </section>
+
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+
+
+
+
+
+  <!-- dropdown -->
+
+
+  <!-- divider -->
+
+  <div class="divider">
+
+
+
+
+  </div>
+  <!-- /divider -->
+
+
+
+  <!-- footer -->
+
   
-        <!--/card -->
+  <footer class="footer text-white text-center text-lg-start bg-holder w-100 d-block" style="background-color: #8cbabf ">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase text-center">گواهی نامه ها </h5>
+  
+          <div class="row">
+            <img style="width: 100px;" class="img p-2 " src="https://www.darmankade.com/_next/image/?url=%2Fimages%2Fcertificate%2Fnezam-senfi.jpg&w=96&q=75" alt="">
+            <img style="width: 100px;" class="img p-2" src="https://www.darmankade.com/_next/image/?url=%2Fimages%2Fcertificate%2Friyasat-jomhoori.jpg&w=96&q=75" alt="">
+            <img style="width: 100px;" class="img p-2" src="https://www.darmankade.com/_next/image/?url=%2Fimages%2Fcertificate%2Fsamandehi.jpg&w=96&q=75" alt="">
+            <img style="width: 100px;" class="img  p-2" src="https://www.darmankade.com/_next/image/?url=%2Fimages%2Fcertificate%2Fbadge3-minoXs9hk.jpg&w=96&q=75" alt="">
+
+          </div>
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div id="footer-link" class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">پشتیبانی</h5>
+  
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white"> سوالات متداول </a>
+            </li>
+            <li>
+
+            </li>
+            <li>
+              <a href="#!" class="text-white"> شکایات   </a>
+            </li>
+          
+          </ul>
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div  class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">خدمات</h5>
+  
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white"> نوبت حضوری</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white"> مشاوره تلفنی و متنی</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white"> بانک اطلاعاتی مراکز درمانی</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white"> تست هوشمند کرونا</a>
+            </li>
+          </ul>
+        </div>
+        
+        <div  class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">ارتباط با ما</h5>
+  
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">   08123567000 <i class='bx bxs-phone-call' style="color: #558d93; " ></i></a>
+            </li>
+            <li>
+              <a href="#!" class="text-white"> medimate@gmail.com <i class='bx bxs-envelope' style="color: #558d93;"></i> </a>
+            </li>
+            <li>
+              <a href="#!" class="text-white"> تهران خیابان انقلاب تقاطع <i class='bx bxs-location-plus' style="color: #558d93;"></i> <br>انقلاب فلسطین پلاک 435 </a>
+            </li>
+           
+          </ul>
+        </div>
+
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: #558d93;"> 
+مدی میت در شبکه های اجتماعی
+<br>
+<h4 class="social text-center">
+<i class='bx bxl-facebook-circle' style="color: #f4d9de; width: 20px;" ></i> 
+<i class='bx bxl-instagram-alt' style="color: #f4d9de; width: 20px;" ></i>
+<i class='bx bxl-twitter ' style="color: #f4d9de; width: 20px;"></i>
+<i class='bx bxl-youtube' style="color: #f4d9de; width: 20px;"  ></i>
+
+</h4>
+    </div>
+    <!-- Copyright -->
+  </footer>
 
 
-    <!-- wrapper     -->
 
-   <!-- Fontawesome Link for Icons -->
-   
-   <div class="wrapper">
-     <i id="left" class="fa-solid fa-angle-left"></i>
-     <ul class="carousel">
-       <li class="card">
-         <div class="img"><img src="" alt="img" draggable="true"></div>
-         <h2>Blanche Pearson</h2>
-         <span>Sales Manager</span>
-       </li>
-       <li class="card">
-         <div class="img"><img src="images/img-2.jpg" alt="img" draggable="false"></div>
-         <h2>Joenas Brauers</h2>
-         <span>Web Developer</span>
-       </li>
-       <li class="card">
-         <div class="img"><img src="images/img-3.jpg" alt="img" draggable="false"></div>
-         <h2>Lariach French</h2>
-         <span>Online Teacher</span>
-       </li>
-       <li class="card">
-         <div class="img"><img src="images/img-4.jpg" alt="img" draggable="false"></div>
-         <h2>James Khosravi</h2>
-         <span>Freelancer</span>
-       </li>
-       <li class="card">
-         <div class="img"><img src="images/img-5.jpg" alt="img" draggable="false"></div>
-         <h2>Kristina Zasiadko</h2>
-         <span>Bank Manager</span>
-       </li>
-       <li class="card">
-         <div class="img"><img src="images/img-6.jpg" alt="img" draggable="false"></div>
-         <h2>Donald Horton</h2>
-         <span>App Designer</span>
-       </li>
-     </ul>
-     <i id="right" class="fa-solid fa-angle-right"></i>
-   </div>
 
-        <!-- /wrapper -->
+  <!-- /footer -->
 
 
 
+  
+
+
+
+
+
+
+
+  <!-- <label for="language">Select a Programming Language:</label>
+  <select name="language" id="language">
+    <option value="javascript">JavaScript</option>
+    <option value="python">Python</option>
+    <option value="c++" disabled>C++</option>
+    <option value="java" selected>Java</option>
+  </select> -->
+
+  <!-- dropdown -->
 
 
 
